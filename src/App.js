@@ -21,8 +21,8 @@ function App() {
                 <directionalLight castShadow position={[-5, -5, 5]} intensity={0.3} />
                 <OrbitControls />
                 <Suspense fallback={null}>
-                    <Model scale={[2, 2, 2]} />
-                    {/* <FlightHelmet scale={[8, 8, 8]} position={[0, -3, 0]} /> */}
+                   <Model scale={[2, 2, 2] } position={[3, -1,0]} /> 
+                     <FlightHelmet scale={[6, 6, 6]} position={[-3, -3, 0]} />  
                 </Suspense>
                 <EffectComposer>
                     <Noise opacity={0.02} />
