@@ -12,7 +12,6 @@ export default function Model(props) {
     const [index, setIndex] = useState(0);
     const envMap = useCubeTexture(["px.png", "nx.png", "py.png", "ny.png", "pz.png", "nz.png"], { path: "env/" });
 
-    console.log(materials);
     useLayoutEffect(() => {
         Object.keys(materials).forEach((m) => {
             materials[m].envMap = envMap;

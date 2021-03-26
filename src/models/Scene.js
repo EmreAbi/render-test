@@ -9,7 +9,6 @@ import scene from "./scene.glb";
 export default function Model({ ...props }) {
     const group = useRef();
     const { nodes, materials } = useGLTF(scene);
-    console.log(nodes);
     return (
         <group ref={group} {...props} dispose={null}>
             <group position={[0, 0, 0]} rotation={[-Math.PI, 0, -Math.PI]}>
